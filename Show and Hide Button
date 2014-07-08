@@ -1,0 +1,21 @@
+<script type="text/javascript" language="JavaScript">
+function Hide(d) {
+	document.getElementById(d).style.display = "none";
+}
+function Show(d) {
+	document.getElementById(d).style.display = "block";
+}
+function ReverseDisplay(d) {
+	if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
+	else { document.getElementById(d).style.display = "none"; }
+}
+</script>SHOW AND HIDE INFO BUTTON<br/>
+<a href="javascript:Show('uniquename')">
+Show Hidden Information
+</a>
+<div id="uniquename" style="display:none;">
+<p>Hidden Information</p>
+<a href="javascript:Hide('uniquename')">
+Hide Information
+</a>
+</div>
