@@ -1,0 +1,17 @@
+<script language="JavaScript">
+
+function CC_go(form) {var myindex=form.dest.selectedIndex
+window.open(form.dest.options[myindex].value, target="_parent", "toolbar=yes,scrollbars=yes,location=yes"); }
+
+</script>
+
+<form name="CC_LinkForm">
+<select name="dest" SIZE=1>
+<option selected value="">Places to go
+<option value="http://www.bbc.co.uk/">BBC
+<option value="http://www.cricinfo.com/">Cricinfo
+<option value="http://www.skysports.com">Skyports
+</select>
+<P>
+<input type="button" value="Go to Page" onClick="CC_go(this.form)">
+</form>
